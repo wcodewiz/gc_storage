@@ -1,5 +1,5 @@
 {
-    "name": "gc-storage",
+    "name": "gc_storage_db",
     "version": "1.0.0",
     "description": "a grambid database storage manager for localStorage, incases of insensitive data",
     "main": "dist/cjs/index.js",
@@ -9,7 +9,8 @@
     ],
     "scripts": {
         "dev": "vite",
-        "pack": "npm run build  && npm pack && npm login && npm publish",
+        "pack": "npm run build   && npm pack && npm login && npm publish",
+        "git": "git add --all&& git commit -m \"wcodewiz modified\" && git push --all -f",
         "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs ",
         "build:esm": "tsc",
         "build:cjs": "tsc --module CommonJs --outDir dist/cjs"

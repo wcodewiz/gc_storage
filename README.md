@@ -6,7 +6,7 @@ a grambid database storage manager for localStorage, incases of insensitive data
 
 ## Usage
 
-First Create an global file.. example **database.tsx** using typescript paste the following code
+First Create a global file.. example **database.tsx** using typescript paste the following code
 
 ```
 import { GCStorage } from '../Storage';
@@ -17,7 +17,7 @@ const databaseName = 'myDataBase';
 export const CartTable = GCStorage.init(databaseName).createTable(new Table('cart', ['id', 'product_id', 'quantity', 'price', 'totalPrice'], [], 'id'));
 ```
 
-### Useage
+### Usage
 
 **Now inside your App.tsx**
 
