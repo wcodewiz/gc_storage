@@ -9,7 +9,7 @@
     ],
     "scripts": {
         "dev": "vite",
-        "pack": "npm run build   && npm pack && npm login && npm publish",
+        "pack": "npm run build   && npm pack  && npm publish && npm run git",
         "git": "git add --all&& git commit -m \"wcodewiz modified\" && git push --all -f",
         "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs ",
         "build:esm": "tsc",
